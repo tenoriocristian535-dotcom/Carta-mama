@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Día de las Madres</title>
+
+<style>
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #ffb6d5, #fff0f5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Carta */
+
+.carta{
+    width: 75%;
+    background: white;
+    padding: 30px;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0px 0px 25px gray;
+    z-index: 2;
+
+    animation: aparecer 2s ease;
+}
+
+h1{
+    color: #ff3f7a;
+    font-size: 45px;
+
+    animation: colores 3s infinite alternate;
+}
+
+p{
+    font-size: 20px;
+    color: #555;
+    line-height: 1.8;
+}
+
+h2{
+    color: #ff4f81;
+}
+
+/* Corazón */
+
+.corazon{
+    font-size: 60px;
+
+    animation: latido 1s infinite;
+}
+
+/* Botón */
+
+.boton{
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    background-color: #ff4f81;
+    color: white;
+    padding: 14px 28px;
+    border-radius: 12px;
+    transition: 0.5s;
+}
+
+.boton:hover{
+    background-color: #ff1f67;
+    transform: scale(1.2);
+}
+
+/* Flores */
+
+.flor{
+    position: absolute;
+    top: -50px;
+    font-size: 30px;
+
+    animation: caer linear infinite;
+}
+
+.f1{
+    left: 10%;
+    animation-duration: 8s;
+}
+
+.f2{
+    left: 30%;
+    animation-duration: 10s;
+}
+
+.f3{
+    left: 50%;
+    animation-duration: 7s;
+}
+
+.f4{
+    left: 70%;
+    animation-duration: 9s;
+}
+
+.f5{
+    left: 90%;
+    animation-duration: 11s;
+}
+
+/* Animaciones */
+
+@keyframes latido{
+
+    0%{
+        transform: scale(1);
+    }
+
+    50%{
+        transform: scale(1.4);
+    }
+
+    100%{
+        transform: scale(1);
+    }
+}
+
+@keyframes colores{
+
+    from{
+        color: #ff3f7a;
+    }
+
+    to{
+        color: #ff85a8;
+    }
+}
+
+@keyframes aparecer{
+
+    from{
+        opacity: 0;
+        transform: translateY(80px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes caer{
+
+    0%{
+        transform: translateY(-50px) rotate(0deg);
+        opacity: 1;
+    }
+
+    100%{
+        transform: translateY(110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- Flores -->
+
+<div class="flor f1">🌸</div>
+<div class="flor f2">💖</div>
+<div class="flor f3">🌷</div>
+<div class="flor f4">💕</div>
+<div class="flor f5">🌹</div>
+
+<!-- Carta -->
+
+<div class="carta">
+
+<div class="corazon">💖</div>
+
+<h1>Feliz Día Mamá</h1>
+
+<p>
+Querida mamá:<br><br>
+
+Gracias por estar siempre conmigo,
+por cuidarme y apoyarme en cada momento.
+Tu amor y paciencia hacen mi vida más feliz. 💕<br><br>
+
+Eres la mejor mamá del mundo
+y siempre voy a agradecer todo lo que haces por mí.
+Espero que hoy tengas un día lleno de alegría,
+amor y muchas sonrisas. 🌸
+</p>
+
+<h2>Te quiero muchísimo 💐</h2>
+
+<a href="dedicatoria.html" class="boton">Con cariño</a>
+
+</div>
+
+</body>
+</html>
